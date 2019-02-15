@@ -12,4 +12,4 @@
 
 ### Estrutura de Pastas
 
-![Estrutura de Arquivos](./assets/img/tree-folders.png?raw=true "Estrutura de Arquivos")
+![Estrutura de Arquivos](./assets/img/folder-structure.png?raw=true "Estrutura de Arquivos")

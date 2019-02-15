@@ -32,24 +32,24 @@ class Cotacoes(scrapy.Spider):
 
             tokenNext = documentReady['next']
 
-            for dado in documentReady['docs']:
+            for data in documentReady['docs']:
 
                 item = dolarItem()
 
-                item['compra'] = dado['bidvalue']
-                item['venda'] = dado['askvalue']
+                item['compra'] = data['bidvalue']
+                item['venda'] = data['askvalue']
 
-                data = dado['date']
-                ano = data[0:4]
-                mes = data[4:6]
-                dia = data[6:8]
+                date = data['date']
+                ano = date[0:4]
+                mes = date[4:6]
+                dia = date[6:8]
                 
-                data = dia + '/' + mes + '/' + ano
+                date = dia + '/' + mes + '/' + ano
 
-                dataMongo = datetime.datetime.strptime(data, '%d/%m/%Y')
-                self.log(dataMongo)
+                dateMongo = datetime.datetime.strptime(date, '%d/%m/%Y')
+                self.log(dateMongo)
 
-                item['data'] = dataMongo 
+                item['data'] = dateMongo 
 
                 yield item
 

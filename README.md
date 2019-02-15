@@ -1,5 +1,4 @@
 ## Mineração de Dados de Cotações
----------------------------------------
 
 ### Requerimentos para o Projeto
 

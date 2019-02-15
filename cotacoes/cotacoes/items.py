@@ -7,8 +7,8 @@
 
 import scrapy
 
+class dolarItem(scrapy.Item):
 
-class CotacoesItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    compra = scrapy.Field()
+    venda = scrapy.Field()
+    data = scrapy.Field()
